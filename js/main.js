@@ -7,6 +7,14 @@ const doneList = document.querySelector("#doneList")
 
 const taskArr = localStorage.getItem("notes") ? JSON.parse(localStorage.getItem("notes")) : []
 
+form.addEventListener("submit", e => {
+    e.preventDefault()
+    taskArr.push(noteInput.value)
+    localStorage.setItem("notes", JSON.stringify(taskArr))
+    // funcion de crear
+    noteInput.value = ""
+})
+
 
 
 
