@@ -7,22 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The To-Do-List</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
 
 
 </head>
 
 <body>
-    <form id="form">
-        <input id="noteInput" type="text" placeholder="New Task">
-        <button id="addTask">Add Task</button>
-        <button id="reset">Clear All</button>
-    </form>
-    
-    <ol id="taskList""></ol>
-    <ul id="doneList"></ul>
+    <main>
+        <section class="greeting">
+            <h2 class="title">
+                To Do List
+            </h2>
+        </section>
 
-    
-    <script src="./js/main.js"></script>
+        <section class="create-task">
+            <h3>What is your new task?</h3>
+            <form id="form">
+                <input type="text" name="text" class="input" placeholder="Add new task here...">
+                <button id="addTask">+ Add the new TASK clicking me</button>
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>TASK LIST</h3>
+            <div class="list" id="todo-list">
+                <div class="todo-item">
+                    <ul id="taskList" class="done">
+
+                </div>
+            </div>
+
+            </ul>
+            </div>
+        </section>
+
+    </main>
+    <script src=" ./js/main.js">
+    </script>
 </body>
 
 </html>
